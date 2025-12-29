@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -12,6 +14,9 @@ public class Main {
         };
 
         System.out.println("Numero primo.: " + n.verificaNumeroPrimo(2));
+
+        Conversao conv = (s) -> s.toUpperCase();
+        System.out.println(conv.conversaoParaMaiuscula("felipe"));
 
     }
 }
