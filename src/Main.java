@@ -1,5 +1,3 @@
-import java.util.Locale;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -17,6 +15,12 @@ public class Main {
 
         Conversao conv = (s) -> s.toUpperCase();
         System.out.println(conv.conversaoParaMaiuscula("felipe"));
+
+        Palindromo p = (str) -> {
+            StringBuilder strInvertido = new StringBuilder(str);
+            return (str.equalsIgnoreCase(String.valueOf(strInvertido.reverse())));
+        };
+        System.out.println("Palindromo: " + p.verificarPalindromo("felipe"));
 
     }
 }
